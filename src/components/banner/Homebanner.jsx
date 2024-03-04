@@ -5,11 +5,12 @@ const Homebanner = () => {
         <>
             <section className='banner_bg'>
                 <div className='h-screen'>
-                      
 
-                      <div className='h-full  flex items-center justify-center  w-1/2 mx-auto text-white text-center'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi aperiam at doloribus optio voluptatum cum ipsam veniam animi repellat rem perferendis modi mollitia debitis voluptatem porro, atque doloremque asperiores!
-                      </div>
+                    <div className='h-full relative  flex items-center justify-center mx-auto text-white text-center'>
+                        <div className=''>
+                            <h2 className='text-6xl font-bold '>Martin Moore</h2>
+                        </div>
+                    </div>
                 </div>
             </section>
 

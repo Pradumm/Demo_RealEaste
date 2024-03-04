@@ -1,19 +1,14 @@
 
 import './App.css'
 import React from 'react'
-import Header from './components/header/Header'
-import Homebanner from './components/banner/Homebanner'
-import Footer from './components/footer/Footer'
-import Testimonial from './components/testimonial/Testimonial'
+import Home from './pages/home/Home'
 
 function App() {
 
   return (
     <>
-      <Header/>
-      <Homebanner/>
-      <Testimonial/>
-      <Footer/>
+      <Home />
+
     </>
   )
 }

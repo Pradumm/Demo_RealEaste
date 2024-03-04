@@ -12,7 +12,7 @@ const Footer = () => {
                     <div class="grid grid-cols-1 gap-2 px-4 py-6 lg:py-8 md:grid-cols-2">
                         <div class='flex flex-wrap  gap-6'>
                             <div class='w-full lg:w-56'>
-                                <img src="./asset/footer-img.png" class='w-full' alt="" />
+                                <img src="https://media.istockphoto.com/id/1445195721/photo/happy-female-customer-paying-with-a-credit-card-in-a-ceramic-store.webp?b=1&s=170667a&w=0&k=20&c=OzfxMe_tc7J0hljLVCMQKbMPIcJ3JVblYow6FonNA_Q=" class='w-full' alt="" />
                                 <p className='text-xl font-semibold text-center py-2 '>Manider Singh</p>
                             </div>
 
@@ -59,17 +59,17 @@ const Footer = () => {
                                 <div className='flex gap-3 justify-center mt-2'>
                                     <div className=' flex items-center 
                                     justify-center w-10 h-10  border border-[#C5B351] hover:bg-[#C5B351]  transition-all duration-75
-                                    rounded-full'>
+                                    -full'>
                                         <FaLinkedinIn />
                                     </div>
                                     <div className=' flex items-center 
                                     justify-center w-10 h-10  border border-[#C5B351] hover:bg-[#C5B351]  transition-all duration-75
-                                    rounded-full'>
+                                    -full'>
                                         <FaInstagram />
                                     </div>
                                     <div className=' flex items-center 
                                     justify-center w-10 h-10  border border-[#C5B351] hover:bg-[#C5B351]  transition-all duration-75
-                                    rounded-full'>
+                                    -full'>
                                         <FaFacebookF />
                                     </div>
                                 </div>
