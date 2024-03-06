@@ -6,6 +6,7 @@ import Testimonial from '../../components/testimonial/Testimonial'
 import HomeContact from './HomeContact'
 import About from './About'
 import CardList from './CardList'
+import Homeinfo from './Homeinfo'
 
 const Home = () => {
     return (
@@ -69,7 +70,7 @@ const Home = () => {
              
             <CardList/>
             <Testimonial />
-          
+           <Homeinfo/>
             <Footer />
         </>
     )
