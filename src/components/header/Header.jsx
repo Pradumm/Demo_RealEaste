@@ -50,7 +50,7 @@ export default function Navbar() {
         {/* sidebar mobile menu */}
         <div
           className={clsx(
-            "fixed h-full w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-0 -translate-x-full transition-all",
+            "fixed h-full w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-[7px] -translate-x-full transition-all",
             isSideMenuOpen && "translate-x-0"
           )}
         >
@@ -70,7 +70,7 @@ export default function Navbar() {
         <section>
           <ul className="text-lg font-normal uppercase hidden lg:flex leading-[100px]">
             <li className="px-4 hover:bg-[rgba(255,255,255,0.1)] hover:text-[#C8B568]">
-              <Link to="#" className="">Home</Link>
+              <Link to="/" className="">Home</Link>
             </li>
            
             <li className="px-4 hover:bg-[rgba(255,255,255,0.1)] hover:text-[#C5B351] " onMouseEnter={() => setPropertiesOpen(true)} onMouseLeave={() => setPropertiesOpen(false)}>
@@ -88,11 +88,11 @@ export default function Navbar() {
                 </button>
 
                 {propertiesOpen && (
-                  <div className="absolute right-0 z-10 w-56  origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 -md shadow-lg outline-none" role="menu">
+                  <div className="absolute bg-black text-white right-0 z-10 w-56  origin-top-right  divide-y divide-gray-100 -md shadow-lg outline-none" role="menu">
                     <div className="py-1">
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 1</a>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 2</a>
-                      <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Option 3</a>
+                      <a href="#" className="block px-4 py-2 text-sm " role="menuitem">Option 1</a>
+                      <a href="#" className="block px-4 py-2 text-sm " role="menuitem">Option 2</a>
+                      <a href="#" className="block px-4 py-2 text-sm " role="menuitem">Option 3</a>
                     </div>
                   </div>
                 )}

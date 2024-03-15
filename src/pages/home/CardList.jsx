@@ -4,16 +4,24 @@ import { IoCarSportOutline } from "react-icons/io5";
 import { LuTriangleRight } from "react-icons/lu";
 const CardList = () => {
     return (
-        <div className='py-20 bg-[#abb8c3]/10 lg:px-20 '>
-            <div className='container lg:px-10 px-2 items-center'>
+        <div className='py-5 lg:py-20 bg-[#abb8c3]/10 lg:px-20 '>
+            <div className='container  px-2 items-center'>
                 <div className='mb-6'>
-                    <h2 className='text:2xl text-center  lg:text-3xl uppercase font-bold mb-3'>Exclusive Listings</h2>
+                    <h2 className='text-3xl lg:text-5xl font-[400]  text-center text-[#C5B351]    capitalize mb-3'>Exclusive Listings</h2>
                     <p className=' text-center'>LOREM IPSUM DOLOR SIT AMET</p>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-                    <div class="w-80 shadow bg-white">
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-4 lg:gap-10 mx-auto'>
+                    <div 
+                    //   data-aos="fade-zoom-in"
+                    //   data-aos-easing="ease-in-back"
+                    //   data-aos-delay="300"
+                    //   data-aos-offset="0"
+                
+                    class=" w-full lg:w-80 shadow bg-white">
                         <a href="#">
-                            <img src="https://demo06.houzez.co/wp-content/uploads/2016/03/015-592x444.jpg" alt="" />
+                            <img
+                            className='w-full'
+                             src="https://demo06.houzez.co/wp-content/uploads/2016/03/015-592x444.jpg" alt="" />
 
                         </a>
                         <div class="p-6">
@@ -38,7 +46,13 @@ const CardList = () => {
                         </div>
                     </div>
 
-                    <div class="w-80 shadow bg-white">
+
+                    <div 
+                        // data-aos="fade-zoom-in"
+                        // data-aos-easing="ease-in-back"
+                        // data-aos-delay="300"
+                        // data-aos-offset="0"
+                      class=" w-full lg:w-80  shadow bg-white">
                         <a href="#">
                             <img src="https://demo06.houzez.co/wp-content/uploads/2016/03/023-592x444.jpg" alt="" />
 
@@ -59,13 +73,14 @@ const CardList = () => {
                                     <span className='flex items-center gap-2'> <IoBedOutline className='w-5 h-5' /> 2</span>
                                     <span className='flex items-center gap-2'> <LuTriangleRight className='w-5 h-5' /> 2005 SqFt</span>
 
-
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="w-80 shadow bg-white">
+                    <div 
+                     
+                    class=" w-full lg:w-80  shadow bg-white">
                         <a href="#">
                             <img src="https://demo06.houzez.co/wp-content/uploads/2016/03/015-592x444.jpg" alt="" />
 
@@ -91,7 +106,7 @@ const CardList = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-80 shadow bg-white">
+                    <div class=" w-full lg:w-80  shadow bg-white">
                         <a href="#">
                             <img src="https://demo06.houzez.co/wp-content/uploads/2016/03/015-592x444.jpg" alt="" />
 
@@ -117,7 +132,7 @@ const CardList = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-80 shadow bg-white">
+                    <div class=" w-full lg:w-80  shadow bg-white">
                         <a href="#">
                             <img src="https://demo06.houzez.co/wp-content/uploads/2016/03/015-592x444.jpg" alt="" />
 
@@ -143,7 +158,7 @@ const CardList = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="w-80 shadow bg-white">
+                    <div class=" w-full lg:w-80  shadow bg-white">
                         <a href="#">
                             <img src="https://demo06.houzez.co/wp-content/uploads/2016/03/015-592x444.jpg" alt="" />
 
@@ -172,7 +187,7 @@ const CardList = () => {
                 </div>
 
                 <div className='text-center pt-8'>
-                    <button className='text-white transition duration-150 ease-out hover:ease-in  bg-[#C5B351] hover:bg-black uppercase px-8 py-3'>Let's Chat</button>
+                    <button className='text-white transition duration-150 ease-out hover:ease-in  bg-[#C5B351] hover:bg-black uppercase px-8 py-3'>more</button>
 
                 </div>
 

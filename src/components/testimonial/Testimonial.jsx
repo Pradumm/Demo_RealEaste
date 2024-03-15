@@ -3,10 +3,10 @@ import React from 'react';
 const Testimonial = () => {
     return (
         <>
-            <div className='bg-black text-white lg:px-20 px-4 py-5 lg:py-20 mb-4'>
+            <div className='bg-black text-white lg:px-20 px-4 py-6 lg:py-20 '>
                 <div className='text-center '>
                     <p className='text-xl italic'>what they say</p>
-                    <h1 className='text:2xl lg:text-3xl uppercase font-bold py-2'>client testimonials</h1>
+                    <h1 className='text-3xl lg:text-5xl font-[400] text-[#C5B351]   capitalize py-2'>client testimonials</h1>
                 </div>
 
                 <div id="default-carousel" className="relative mx-auto container  " data-carousel="slide">
@@ -34,7 +34,7 @@ const Testimonial = () => {
                                         <p className='text-xl font-medium'>Mr. Maninder Singh | Morgen Creek</p>
                                         <span>Seller</span>
                                     </div>
-                                    <button className=' hover:text-white  uppercase border border-[#C5B351]  px-12 py-3.5'>more testimonial</button>
+                                    <button className=' hover:text-white  hover:bg-[#C5B351] uppercase border border-[#C5B351]  px-4 py-2 lg:px-12 lg:py-3.5'>more testimonial</button>
                                 </div>
                             </div>
                         </div>

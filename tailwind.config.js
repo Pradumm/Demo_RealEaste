@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'prata': ['Prata', 'serif'],
       },
+      colors: {
+        'NewYello': '#C5B351',
+      },
     },
   },
   plugins: [],
