@@ -9,7 +9,7 @@ const About = () => {
                     <div className=' flex flex-wrap'>
                         <div className='w-full lg:w-1/2 lg:pr-20'>
                             <img
-                                className='w-full h-full lg:h-[700px] object-fill object-center'
+                                className='w-full h-full lg:h-[700px] object-fit object-center'
                                 src="./asset/about-resizeimage.jpg" alt="" />
                         </div>
 
@@ -17,7 +17,7 @@ const About = () => {
                             <p className='text-xl italic mb-4'>About</p>
                             <h1 className='text-3xl lg:text-5xl font-[400] text-[#C5B351]  mb-5'>RAV SANDHU, YOUR LOCAL REALTOR</h1>
 
-                            <div className='lg:pr-6'>
+                            <div className=''>
                                 <p className='text-lg mb-4'>Born and raised in Mission, BC, Rav brings local passion and intimate Fraser Valley knowledge to her role as a real estate professional. Focused on the Fraser Valley, she's dedicated to serving her community, building relationships, and providing top-notch service to her clients. </p>
 
                                 <p className='text-lg mb-4'>Born and raised in Mission, BC, Rav brings local passion and intimate Fraser Valley knowledge to her role as a real estate professional. Focused on the Fraser Valley, she's dedicated to serving her community, building relationships, and providing top-notch service to her clients. </p>
