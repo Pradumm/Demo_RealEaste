@@ -13,7 +13,7 @@ const Home = () => {
         <>
 
             <Header />
-            <Homebanner />
+            <Homebanner/>
 
             {/* <div className='effects-container'>
                 <div className="container">

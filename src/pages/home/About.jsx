@@ -4,9 +4,9 @@ const About = () => {
     return (
         <>
             <div className=''>
-                <div className="">
+                <div className="container px-4 lg:px-10 mx-auto ">
 
-                    <div className='flex flex-wrap'>
+                    <div className=' flex flex-wrap'>
                         <div className='w-full lg:w-1/2 lg:pr-20'>
                             <img
                                 className='w-full h-full lg:h-[700px] object-fill object-center'

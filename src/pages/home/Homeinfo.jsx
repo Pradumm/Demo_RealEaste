@@ -3,10 +3,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 const Homeinfo = () => {
     return (
-        <div className='py-5 lg:py-20 bg-[#abb8c3]/10 lg:px-5 '>
-            <div className='container '>
+        <div className=' py-5 lg:py-20 bg-[#abb8c3]/10 '>
+            <div className='container lg:px-10 mx-auto '>
                 <div className='grid grid-cols-1 md:grid-cols-[auto_60%] '>
-                    <div className='px-4 lg:pl-16'>
+                    <div className='px-4 '>
                         <img src="https://demo06.houzez.co/wp-content/uploads/2020/03/demo06-07-200x300.jpg" alt="" />
 
                         <div>

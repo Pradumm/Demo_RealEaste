@@ -31,8 +31,8 @@ export default function Navbar() {
   ];
 
   return (
-    <main className="bg-black h-[100px] font-prata leading-5 lg:leading-[100px] text-white">
-      <nav className="container h-full flex justify-between lg:px-16 px-2 items-center">
+    <main className=" bg-black h-[100px] font-prata leading-5 lg:leading-[100px] text-white">
+      <nav className="container mx-auto h-full flex justify-between lg:px-16 px-2 items-center">
         <div className="flex items-center gap-8 ">
           <section className="flex items-center gap-4">
             {/* menu */}
