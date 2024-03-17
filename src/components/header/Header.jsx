@@ -35,44 +35,63 @@ export default function Navbar() {
       <nav className="container mx-auto h-full flex justify-between lg:px-16 px-2 items-center">
         <div className="flex items-center gap-8 ">
           <section className="flex items-center gap-4">
-            {/* menu */}
+
             <FiMenu
               onClick={() => setMenu(true)}
               className="text-3xl cursor-pointer lg:hidden"
             />
             {/* logo */}
             <Link to={"/"} className="text-4xl ">
-             <img src="./asset/logo-top.svg" alt="" className="w-full h-[100px]"/>
+              <img src="./asset/logo-top.svg" alt="" className="w-full h-[100px]" />
             </Link>
           </section>
         </div>
 
         {/* sidebar mobile menu */}
-        <div
+
+        <aside
+          id="logo-sidebar"
+          class={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full ${isSideMenuOpen ? 'translate-x-0' : ''}`}
+        >          <div class="h-full px-3 py-4 overflow-y-auto bg-gray-100 ">
+            <a href class="flex items-center ps-2.5 mb-5">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
+              <span class="self-center text-xl font-semibold whitespace-nowrap ">Flowbite</span>
+            </a>
+            <ul class="space-y-2 font-medium">
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <span class="ms-3">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
+                  <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </aside>
+
+
+        {/* <div
           className={clsx(
             "fixed h-full w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-[7px] -translate-x-full transition-all",
             isSideMenuOpen && "translate-x-0"
           )}
         >
           <section className="text-black bg-white flex-col absolute left-0 top-0 h-screen p-4 gap-2 z-50 w-56 flex">
-            <IoCloseOutline
-              onClick={() => setMenu(false)}
-              className="mt-0 mb-8 text-3xl cursor-pointer"
-            />
-            {navlinks.map((d, i) => (
-              <Link key={i} className="font-bold" to={d.link}>
-                {d.label}
-              </Link>
-            ))}
+
           </section>
-        </div>
+        </div> */}
 
         <section>
           <ul className="text-lg font-normal uppercase hidden lg:flex leading-[100px]">
             <li className="px-4 hover:bg-[rgba(255,255,255,0.1)] hover:text-[#C8B568]">
               <Link to="/" className="">Home</Link>
             </li>
-           
+
             <li className="px-4 hover:bg-[rgba(255,255,255,0.1)] hover:text-[#C5B351] " onMouseEnter={() => setPropertiesOpen(true)} onMouseLeave={() => setPropertiesOpen(false)}>
               <div className="relative inline-block text-left">
                 <button
@@ -164,7 +183,7 @@ export default function Navbar() {
                   aria-expanded={aboutOpen}
                 >
                   ABOUT
-           
+
                   <svg className="-mr-1 mt-10 ml-1 w-5 text-[#C5B351] h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fillRule="evenodd" d="M10 12.586L4.707 7.293a1 1 0 011.414-1.414L10 10.758l4.879-4.879a1 1 0 111.414 1.414L10 12.586z" clipRule="evenodd" />
                   </svg>
