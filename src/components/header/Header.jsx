@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect , useRef} from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import clsx from "clsx";
@@ -10,6 +10,13 @@ export default function Navbar() {
   const [buyingOpen, setBuyingOpen] = useState(false);
   const [sellingOpen, setSellingOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const asideRef = useRef(null);
+
+
+  
+
+
+
 
   const navlinks = [
     {
@@ -51,25 +58,25 @@ export default function Navbar() {
 
         <aside
           id="logo-sidebar"
+          ref={asideRef}
           class={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full ${isSideMenuOpen ? 'translate-x-0' : ''}`}
-        >          <div class="h-full px-3 py-4 overflow-y-auto bg-gray-100 ">
+        >
+          <div class="h-full px-3 py-4 overflow-y-auto bg-gray-100 ">
             <a href class="flex items-center ps-2.5 mb-5">
-              <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
-              <span class="self-center text-xl font-semibold whitespace-nowrap ">Flowbite</span>
+              {/* <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 me-3 sm:h-7" alt="Flowbite Logo" /> */}
+              <span class="self-center text-xl font-semibold whitespace-nowrap "></span>
             </a>
             <ul class="space-y-2 font-medium">
               <li>
-                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 group">
                   <span class="ms-3">Dashboard</span>
                 </a>
               </li>
               <li>
-                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group">
                   <span class="flex-1 ms-3 whitespace-nowrap">Kanban</span>
-                  <span class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
                 </a>
               </li>
-
             </ul>
           </div>
         </aside>
